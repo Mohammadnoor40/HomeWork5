@@ -1,0 +1,31 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+box-sizing: content-box;
+}
+.picture-moving{
+    width: 200px;
+    height: 200px;
+    background-image: url('Real_Madrid_CF.svg.webp'); 
+    background-size: cover;
+    position: absolute;
+    animation: moveImage 10s infinite;
+  }
+
+  @keyframes moveImage {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(100vw, 0);
+    }
+    50% {
+      transform: translate(100vw, 100vh);
+    }
+    75% {
+      transform: translate(0, 100vh);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
